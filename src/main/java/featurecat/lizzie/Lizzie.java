@@ -7,6 +7,7 @@ import featurecat.lizzie.gui.LizzieFrame;
 import featurecat.lizzie.gui.LizzieMain;
 import featurecat.lizzie.gui.MainFrame;
 import featurecat.lizzie.rules.Board;
+import featurecat.lizzie.util.InputListenerServer;
 import featurecat.lizzie.util.Utils;
 import java.io.File;
 import java.io.IOException;
@@ -22,6 +23,7 @@ public class Lizzie {
   public static GtpConsolePane gtpConsole;
   public static Board board;
   public static Leelaz leelaz;
+  public static InputListenerServer inputServer = new InputListenerServer(59999);
   public static String lizzieVersion = "0.7.4";
   private static String[] mainArgs;
   public static EngineManager engineManager;
